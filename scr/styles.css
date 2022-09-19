@@ -1,0 +1,86 @@
+nav {
+    transition: 500ms ease;
+}
+
+nav.scrolled {
+    background-color: #212529;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#home {
+    background: url('./img/capa.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    background-color: #417ec0;
+    background-image: linear-gradient(to right top,
+            #adcff5,
+            #9cc4f0,
+            #91beee,
+            #7fb4ec,
+            #6dc2e4,
+            #65b4e2,
+            #4d7894,
+            #467691,
+            #3b7894,
+            #2976be,
+            #163e8a,
+            #0c1a41);
+    opacity: 0.4;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#home * {
+    z-index: 1;
+}
+
+#trabalhe-conosco {
+    background: url('./img/capa.jpg');
+    background-size: cover;
+}
+
+.svg-what-we-do {
+    max-width: 100px;
+}
+
+#quem-somos img {
+    max-height: 700px;
+    max-width: 700px;
+    width: 100%; 
+}
+
+div h6 {
+    color: #e63e2a;
+}
+
+#contato {
+    background: url('./img/supermarket.webp');
+    background-size: cover;
+    border-radius: 30%;
+    opacity: 0.9;
+    font-size: 2rem;
+}
+#texto-contato{
+  font-size: 4rem;
+  text-align: justify;
+  font-weight: 800;
+}
+.text-center{
+    color: #2976be;
+}
+#social-media{
+    color: #2976be;
+}
+#text-area-atuacao{
+    text-align: justify;
+    
+}
+@media only screen and (max-width: 480px) {  img {    width: 100%;  }}
