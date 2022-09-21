@@ -54,7 +54,7 @@ nav.scrolled {
 #quem-somos img {
     max-height: 700px;
     max-width: 700px;
-    width: 100%; 
+    width: 100%;
 }
 
 div h6 {
@@ -62,25 +62,81 @@ div h6 {
 }
 
 #contato {
+    position: relative;
     background: url('./img/supermarket.webp');
     background-size: cover;
     border-radius: 30%;
-    opacity: 0.9;
+
     font-size: 2rem;
 }
-#texto-contato{
-  font-size: 4rem;
-  text-align: justify;
-  font-weight: 800;
-}
-.text-center{
-    color: #2976be;
-}
-#social-media{
-    color: #2976be;
-}
-#text-area-atuacao{
+
+#texto-contato {
+    font-size: 4rem;
     text-align: justify;
-    
+    font-weight: 800;
 }
-@media only screen and (max-width: 480px) {  img {    width: 100%;  }}
+
+.text-center {
+    color: #2976be;
+}
+
+#social-media {
+    color: #2976be;
+}
+
+#text-area-atuacao {
+    text-align: justify;
+
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+        width: 100%;
+    }
+}
+
+#contato::after {
+    content: '';
+    position: absolute;
+    background-color: #2976be;
+    border-radius: 30%;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#contato .container {
+    z-index: 1;
+}
+
+#ViniciusSantos {
+    color: #fff;
+}
+
+#logo-nav {
+    padding: 1rem;
+}
+
+#logo-nav div {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.scrolled #logo-nav div:last-child {
+    color: #2976be;
+}
+
+#logo-nav div:last-child {
+    text-transform: capitalize;
+}
+
+a[href="#home"] {
+    text-decoration: none;
+
+}
