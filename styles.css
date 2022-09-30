@@ -1,3 +1,7 @@
+body {
+    min-width: 98vw;
+}
+
 nav {
     transition: 500ms ease;
 }
@@ -91,7 +95,7 @@ div h6 {
 
 @media only screen and (max-width: 480px) {
     img {
-        width: 100%;
+        width: 15%;
     }
 }
 
@@ -140,3 +144,10 @@ a[href="#home"] {
     text-decoration: none;
 
 }
+
+@media (max-width: 768px) {
+    .vh-sm-auto {
+      height: auto  !important;
+    }
+}
+  
