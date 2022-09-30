@@ -144,6 +144,9 @@ a[href="#home"] {
     text-decoration: none;
 
 }
+#ViniciusSantos {
+    color: red;
+}
 
 @media (max-width: 768px) {
     .vh-sm-auto {
